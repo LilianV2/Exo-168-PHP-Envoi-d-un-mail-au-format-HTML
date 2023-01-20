@@ -9,7 +9,7 @@
 
 $to = [
     'j.conan@fondationface.org',
-    ...
+    'lilianom59@outlook.fr',
 ];
 
 $html = '
@@ -20,8 +20,12 @@ $html = '
         <body>
             <div>
                 <!-- Vos actualités ici -->
+                <span>Je suis un super texte</span>
             </div>
         </body>
     </html>
 ';
+
+mail(implode($to),'sujet',$html,'ppl@test.com');
+
 
